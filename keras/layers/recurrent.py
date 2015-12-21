@@ -432,6 +432,7 @@ class LSTM(Recurrent):
 
     def step(self, x, states):
         assert len(states) == 2
+        print (x)
         h_tm1 = states[0]
         c_tm1 = states[1]
 
