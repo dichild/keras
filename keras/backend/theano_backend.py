@@ -418,6 +418,7 @@ def rnn(step_function, inputs, initial_states,
     def _step(input, *states):
         output, new_states = step_function(input, states)
         if masking:
+            print (input)
             # if all-zero input timestep, return
             # all-zero output and unchanged states
             switch = T.any(input, axis=-1, keepdims=True)
