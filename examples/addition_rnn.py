@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 '''An implementation of sequence to sequence learning for performing addition
 Input: "535+61"
 Output: "596"
